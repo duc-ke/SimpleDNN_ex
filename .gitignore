@@ -1,4 +1,6 @@
 # personal
+__MACOSX/
+leaf_diseases/
 *.zip
 
 # Byte-compiled / optimized / DLL files
