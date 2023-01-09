@@ -6,4 +6,4 @@
 
 ## download 링크
 * [Dropbox downlink](https://www.dropbox.com/scl/fo/ztkzcw29hck331zy9l3e0/h?dl=0&rlkey=33t1y0qi8mblbq4mwxxr29kko)
-* ``wget -O ./leaf_diseases.zip https://www.dropbox.com/s/ndv05uks2xsab3g/leaf_diseases.zip?dl=1`
+* `wget -O ./leaf_diseases.zip https://www.dropbox.com/s/ndv05uks2xsab3g/leaf_diseases.zip?dl=1`
