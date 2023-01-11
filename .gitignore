@@ -1,7 +1,15 @@
 # personal
 __MACOSX/
 leaf_diseases/
+splitted/
 *.zip
+train/
+test/
+val/
+*.png
+*ipynb_checkpoints/
+out/
+*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
