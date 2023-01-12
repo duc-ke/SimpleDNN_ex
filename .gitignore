@@ -10,6 +10,7 @@ val/
 *ipynb_checkpoints/
 out/
 *.pt
+*core*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

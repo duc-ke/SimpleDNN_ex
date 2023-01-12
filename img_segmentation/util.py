@@ -14,7 +14,7 @@ def save(ckpt_dir, net, optim, epoch):
                "%s/model_epoch%d.pth" % (ckpt_dir, epoch))
 
 ## 네트워크 불러오기
-def load(ckpt_dir, net, optim):
+def load(ckpt_dir, net, optim, cuda_idx=None):
     if not os.path.exists(ckpt_dir):
         # ckpt 없다면 기본 셋팅 return
         epoch = 0
@@ -24,7 +24,10 @@ def load(ckpt_dir, net, optim):
     ckpt_lst = os.listdir(ckpt_dir)
     ckpt_lst.sort(key=lambda f: int(''.join(filter(str.isdigit, f))))
 
-    dict_model = torch.load('%s/%s' % (ckpt_dir, ckpt_lst[-1]))
+    if cuda_idx == None:
+        dict_model = torch.load('%s/%s' % (ckpt_dir, ckpt_lst[-1]))
+    else:
+        dict_model = torch.load('%s/%s' % (ckpt_dir, ckpt_lst[-1]), map_location=f'cuda:{cuda_idx}')
 
     net.load_state_dict(dict_model['net'])
     optim.load_state_dict(dict_model['optim'])
