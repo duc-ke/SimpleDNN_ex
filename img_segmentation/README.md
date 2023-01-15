@@ -4,11 +4,11 @@ Sementic segmentation (이미지 픽셀분할)분야의 vanilla UNet(2015) archi
 
 **본 repository는 @hanyoseob 님의 `youtube-cnn-002-pytorch-unet` [github](https://github.com/hanyoseob/youtube-cnn-002-pytorch-unet)을 바탕으로 공부하여 약간의 코드 수정, 주석 및 코드 리펙토링을 가미하였음을 밝힙니다.**
 
-<center><img src="imgs/unet_arch.jpg" width="700" height="450"></center>
+<center><img src="../imgs/unet_arch.jpg" width="700" height="450"></center>
 
 | Original | G.T | Inference (epoch 10) |
 |----------|-----| ----------|
-| ![](imgs/input_0000.png) | ![](imgs/label_0000.png) |  ![](imgs/output_0000.png) |
+| ![](../imgs/input_0000.png) | ![](../imgs/label_0000.png) |  ![](../imgs/output_0000.png) |
 
 ## 사용한 데이터셋
 * isbi 2012 EM (Electron Microscopy) dataset
